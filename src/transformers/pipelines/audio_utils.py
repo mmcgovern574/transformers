@@ -72,7 +72,7 @@ def ffmpeg_microphone(
         input_ = ":0"
     elif system == "Windows":
         format_ = "dshow"
-        input_ = "default"
+        input_ = "audio=Microphone Array (Intel® Smart Sound Technology (Intel® SST))"
 
     ffmpeg_command = [
         "ffmpeg",
